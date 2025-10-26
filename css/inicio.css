@@ -1,0 +1,134 @@
+/* ===== Reset e base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #001010;
+  color: white;
+  min-height: 100vh;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: #001010;
+}
+
+.menu {
+  font-size: 24px;
+  color: #ccc;
+  background-color: #001010;
+}
+
+.search-bar input {
+  width: 400px;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 20px;
+  background-color: #0b1e1e;
+  color: white;
+  outline: none;
+}
+
+.logo {
+  font-size: 1rem;
+  color: #ccc;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+/* ===== Estrutura principal ===== */
+main {
+  display: flex;
+  justify-content: space-around;
+  padding: 40px;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+section {
+  text-align: center;
+}
+
+/* ===== Títulos ===== */
+h2 {
+  margin-bottom: 15px;
+}
+
+.star {
+  color: gold;
+  font-size: 1.1rem;
+}
+
+/* ===== Favoritos ===== */
+.favoritos .filmes {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+}
+
+.favoritos img {
+  width: 200px;
+  height: 260px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.favoritos img:hover {
+  transform: scale(1.05);
+}
+
+.semelhantes h2 {
+  color: #6a7cff;
+}
+
+.semelhantes .filmes {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 15px;
+  justify-items: center;
+}
+
+.semelhantes img {
+  width: 200px;
+  height: 260px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
+
+.semelhantes img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Último visto ===== */
+.ultimo img {
+  width: 300px;
+  height: 380px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px #000;
+  transition: transform 0.3s;
+}
+
+.ultimo img:hover {
+  transform: scale(1.05);
+}
+
+/* ===== Responsividade ===== */
+@media (max-width: 800px) {
+  main {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-bar input {
+    width: 250px;
+  }
+}

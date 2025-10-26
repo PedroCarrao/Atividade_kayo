@@ -1,0 +1,103 @@
+/* ===== Reset e base ===== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: #001010;
+  color: white;
+  min-height: 100vh;
+}
+
+/* ===== Cabeçalho ===== */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background-color: #001010;
+}
+
+.menu {
+  font-size: 20px;
+  color: #ccc;
+  background-color: #001010;
+}
+
+.search-bar input {
+  width: 400px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 25px;
+  background-color: #0b1e1e;
+  color: white;
+  outline: none;
+  font-size: 1rem;
+}
+
+.logo img{
+  width: 120px;
+  height: auto;
+}
+
+/* ===== Card do filme ===== */
+.card-filme {
+  background-color: #0b1e1e;
+  margin: 40px auto;
+  width: 90%;
+  max-width: 1000px;
+  border-radius: 20px;
+  padding: 30px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.favorito {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-size: 25px;
+  color: gold;
+}
+
+.conteudo {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.esquerda {
+  text-align: center;
+}
+
+.esquerda h1 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+}
+
+.esquerda img {
+  width: 220px;
+  height: 320px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px #000;
+}
+
+.direita {
+  max-width: 550px;
+}
+
+.direita h2 {
+  margin-bottom: 10px;
+  color: #a8b3ff;
+}
+
+.direita p {
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: justify;
+}
