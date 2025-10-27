@@ -5,8 +5,10 @@
 </head>
 <body>
   <header>
-
-    <div class="search-bar">
+  <div class="logo">CineView</div>
+   
+   
+   <div class="search-bar">
       <form class="Base-Input">
         <input 
           class="input-pesquisa" 
@@ -16,14 +18,22 @@
         >
       </form>
     </div>
-
-    <div class="logo">CineView</div>
+    
+    <button class="menu" onclick="window.location.href='inicial.html';">|Voltar| </button>
+    
   </header>
 
   <main>
     <h2>Resultados de pesquisa</h2>
     <div class="cards-filmes"></div>
   </main>
+
+  <div id="meuModal" class="modal">
+  <div class="modal-conteudo">
+    <span class="fechar">&times;</span>
+    <div id="conteudoModal"></div>
+  </div>
+</div>
 
   <script src="js/index.js"></script>
 </body>

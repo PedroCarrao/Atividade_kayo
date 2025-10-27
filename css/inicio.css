@@ -1,4 +1,4 @@
-/* ===== Reset e base ===== */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ body {
   min-height: 100vh;
 }
 
-/* ===== Cabeçalho ===== */
+
 header {
   display: flex;
   align-items: center;
@@ -22,9 +22,25 @@ header {
 }
 
 .menu {
-  font-size: 24px;
-  color: #ccc;
-  background-color: #001010;
+  font-size: 18px;
+  color: #fff;
+  background: linear-gradient(135deg, #003333, #006666);
+  border: none;
+  border-radius: 10px;
+  padding: 12px 24px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 8px rgba(0, 255, 255, 0.2);
+}
+
+.menu:hover {
+  background: linear-gradient(135deg, #006666, #00aaaa);
+  transform: scale(1.05);
+  box-shadow: 0 6px 12px rgba(0, 255, 255, 0.4);
+}
+
+.menu:active {
+  transform: scale(0.97);
 }
 
 .search-bar input {
@@ -44,7 +60,7 @@ header {
   letter-spacing: 1px;
 }
 
-/* ===== Estrutura principal ===== */
+
 main {
   display: flex;
   justify-content: space-around;
@@ -57,7 +73,7 @@ section {
   text-align: center;
 }
 
-/* ===== Títulos ===== */
+
 h2 {
   margin-bottom: 15px;
 }
@@ -67,7 +83,7 @@ h2 {
   font-size: 1.1rem;
 }
 
-/* ===== Favoritos ===== */
+
 .favoritos .filmes {
   display: flex;
   flex-direction: column;
@@ -76,8 +92,8 @@ h2 {
 }
 
 .favoritos img {
-  width: 200px;
-  height: 260px;
+  width: 300px;
+  height: 360px;
   border-radius: 10px;
   transition: transform 0.3s;
 }
@@ -97,6 +113,12 @@ h2 {
   justify-items: center;
 }
 
+.semelhantes .card-2 img {
+  width: 370px;
+  height: 430px;
+  border-radius: 10px;
+  transition: transform 0.3s;
+}
 .semelhantes img {
   width: 200px;
   height: 260px;
@@ -107,11 +129,17 @@ h2 {
 .semelhantes img:hover {
   transform: scale(1.05);
 }
+.quebra {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
 
-/* ===== Último visto ===== */
+
+
 .ultimo img {
-  width: 300px;
-  height: 380px;
+  width: 500px;
+  height: 580px;
   border-radius: 15px;
   box-shadow: 0 0 15px #000;
   transition: transform 0.3s;
@@ -121,7 +149,7 @@ h2 {
   transform: scale(1.05);
 }
 
-/* ===== Responsividade ===== */
+
 @media (max-width: 800px) {
   main {
     flex-direction: column;
